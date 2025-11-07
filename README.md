@@ -1,59 +1,156 @@
-# TotalumManagerPruebaTecnicaAntonioJuan
+# Totalum Business Manager
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+A full-stack business management application built with Angular 19 and integrated with Totalum SDK. This responsive web application provides comprehensive CRUD operations for managing clients, orders, and products in a business environment.
 
-## Development server
+## 🚀 Features
 
-To start a local development server, run:
+- **Client Management**: Complete CRUD operations for managing customer information
+- **Order Management**: Track and manage orders with full lifecycle support
+- **Product Management**: Maintain product catalog with detailed information
+- **Material Design UI**: Modern and responsive interface using Angular Material
+- **Search & Pagination**: Efficient data browsing with search capabilities
+- **Confirmation Dialogs**: User-friendly confirmation prompts for critical operations
+- **State Management**: Reactive state management using RxJS
+- **REST API Integration**: Seamless communication with Totalum backend services
+
+## 🛠️ Technologies
+
+- **Angular 19**: Latest version of the Angular framework
+- **TypeScript**: Type-safe development
+- **Angular Material**: UI component library
+- **RxJS**: Reactive programming for state management
+- **Totalum SDK**: Backend integration services
+- **CSS**: Custom styling and responsive design
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- Node.js (v18 or higher)
+- npm or yarn package manager
+- Angular CLI (`npm install -g @angular/cli`)
+
+## 🔧 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Phosky71/Totalum-Business-Manager.git
+cd Totalum-Business-Manager
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+## 🚦 Development Server
+
+To start a local development server:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Once the server is running, navigate to `http://localhost:4200/` in your browser. The application will automatically reload whenever you modify source files.
 
-## Code scaffolding
+## 🏗️ Building
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+To build the project for production:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The build artifacts will be stored in the `dist/` directory. The production build is optimized for performance and speed.
 
-## Running unit tests
+## 🧪 Testing
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Running Unit Tests
+
+Execute unit tests with the Karma test runner:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+### Running End-to-End Tests
 
-For end-to-end (e2e) testing, run:
+For end-to-end testing:
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Note: Angular CLI does not include an e2e testing framework by default. Choose one that suits your needs.
 
-## Additional Resources
+## 📁 Project Structure
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```
+src/
+├── app/
+│   ├── components/      # Shared components
+│   ├── pages/           # Feature modules
+│   │   ├── clientes/    # Client management
+│   │   ├── pedidos/     # Order management
+│   │   └── productos/   # Product management
+│   └── totalum/         # Totalum SDK services
+├── assets/              # Static assets
+└── styles/              # Global styles
+```
+
+## 🔌 API Integration
+
+The application integrates with Totalum SDK for backend operations:
+
+- **Client Service**: `src/totalum/service.clientes.ts`
+- **Order Service**: `src/totalum/service.pedidos.ts`
+- **Product Service**: `src/totalum/service.productos.ts`
+- **Core Service**: `src/totalum/totalum.service.ts`
+
+## 📝 Code Scaffolding
+
+Generate new components using Angular CLI:
+
+```bash
+# Generate a component
+ng generate component component-name
+
+# Generate a service
+ng generate service service-name
+
+# See all available schematics
+ng generate --help
+```
+
+## 🎨 Styling
+
+The application uses a combination of:
+
+- Angular Material for UI components
+- Custom CSS for specific styling needs
+- Responsive design principles for mobile compatibility
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is part of a technical assessment and is provided as-is for demonstration purposes.
+
+## 📚 Additional Resources
+
+- [Angular Documentation](https://angular.dev)
+- [Angular CLI Documentation](https://angular.dev/tools/cli)
+- [Angular Material](https://material.angular.io)
+- [RxJS Documentation](https://rxjs.dev)
+
+## 👤 Author
+
+**Antonio Juan** (Phosky71)
+
+---
+
+*Built with ❤️ using Angular 19*
